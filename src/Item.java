@@ -1,3 +1,5 @@
+import java.awt.ItemSelectable;
+
 public class Item 
 {
 	private String item;
@@ -43,6 +45,11 @@ public class Item
     public String toString() 
     {
       String str = "";
+     
+      String item = getItem();
+      double cost = getCost();
+      int quantity = getQuantity();
+
       str = item + ": " + quantity + " @" + cost + "= " + (quantity*cost);
       return str;
 	}
