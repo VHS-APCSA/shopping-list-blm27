@@ -10,8 +10,8 @@ public class ItemRunner
 		int quantity = 0;
 		while(quantity >=0)
 		{
-			System.out.println("First, input your item, then quantity, and finally cost" + " Enter -1 when finished");
-			item = input.nextLine();
+			System.out.println("First, input your item, then cost, and finally quantity." + " Enter -1 when finished");
+			item = input.next();
 			cost = input.nextDouble();
 			quantity = input.nextInt();
 			if(quantity >= 0)
@@ -19,6 +19,9 @@ public class ItemRunner
 				list.addItem(new Item(item, cost, quantity));
 			}
 		}
-		System.out.print(list);
+		Item expensive = list.mostExpensive();
+		System.out.println(expensive);
+		
+		
 	}
 }

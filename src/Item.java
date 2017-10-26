@@ -1,4 +1,4 @@
-import java.awt.ItemSelectable;
+
 
 public class Item 
 {
@@ -50,7 +50,7 @@ public class Item
       double cost = getCost();
       int quantity = getQuantity();
 
-      str = item + ": " + quantity + " @" + cost + "= " + (quantity*cost);
+      str = item + ": " + quantity + " @ " + cost + " = " + (quantity*cost);
       return str;
 	}
 	public void increaseQuantity(int incQuantity)

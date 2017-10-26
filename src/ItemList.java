@@ -15,9 +15,9 @@ public class ItemList
 		Item expensive = items.get(0);
 		for(Item item : items)
 		{
-			if(item.getQuantity() > expensive.getQuantity())
+			if(item.getCost() > expensive.getCost())
 			{
-				item = expensive;
+				expensive = item;
 			}
 		}
 		return expensive;
